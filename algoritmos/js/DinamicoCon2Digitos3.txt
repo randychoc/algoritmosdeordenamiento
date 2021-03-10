@@ -1,0 +1,86 @@
+//dinamico 
+var aum = 0;
+var listaaux;
+var contaaux;
+var largoaux;
+var aumento = function()
+{    
+    var lista = [14, 14, 23, 17, 65];    
+    var n; //cantidad de datos en el arreglo
+    var i; //contador del 2do FOR
+    var k; //contador del 1er FOR
+    var aux; //variable temporal para lista
+    var contadorDiv = 1;    
+    var listaP = [];
+    n = lista.length;      
+    largoaux = n;      
+    
+    //Creamos los <p> necesarios
+    for (j = 1; j < n + 1; j++) 
+    {        
+        // 1. Crear el elemento                    
+        var elementoDivP = document.createElement('p');
+        elementoDivP.setAttribute("id", "pa" + j + "");    
+        // 2. Crear un nodo de texto
+        var contenidoDivP = document.createTextNode("#" + j + "");
+        // 3. Añadir el noto de texto al elemento
+        elementoDivP.appendChild(contenidoDivP);
+        // 4. Agregar atributos al elemento
+        //elemento.setAttribute("style", "background-color:red");
+        elementoDivP.style.backgroundColor = "LightSkyBlue";
+        elementoDivP.style.width = "auto";    
+        elementoDivP.style.marginBottom = "40px";
+        elementoDivP.style.textAlign = "center";
+        elementoDivP.style.color = "black";
+        // 5. Agregar el elemento al documento
+        document.getElementById("pilas").appendChild(elementoDivP);            
+    }
+    
+    // Algoritmo de burbuja 
+    for (k = 1; k < n; k++) //1er FOR 1-5
+    {        
+        for (i = 0; i < (n-k); i++) //2do FOR 0-(9-1) | 
+        {                            
+            if (lista[i] > lista[i + 1]) 
+            {
+                aux = lista[i];                                
+                lista[i] = lista[i + 1];
+                lista[i + 1] = aux;                        
+            }            
+            //console.log("Lista #" + contadorDiv + ": " + lista + " Y aum: " + aum);
+            contadorDiv += 1; 
+            listaP[aum] = lista.join("");               
+            aum++;     
+        }           
+    }       
+    listaaux = listaP;
+    contaaux = contadorDiv - 1;      
+}
+
+aumento();
+var incP = 0;
+var principal = function()
+{        
+    if(incP < contaaux)
+    {                
+        for (k = 1; k < largoaux; k++) //1er FOR 1-5
+        {        
+            for (i = 0; i < (largoaux - k); i++) //2do FOR 0-(9-1) | 
+            {            
+                if (listaaux[i] > listaaux[i + 1]) 
+                {                                 
+                    for (j = 0; j < largoaux; j++) 
+                    {                    
+                        var auxi = document.getElementById("pa" + (j+1));
+                        auxi.innerHTML = ("" + listaaux[incP].substr(0 + j + j, 2) +"");
+                        auxi.style.height = "" + ((listaaux[incP].substr(0 + j + j, 2))*2) + "px";
+                        auxi.style.marginBottom = "40px";
+                        auxi.style.width = "auto";   
+                    }                                
+                }            
+            }        
+        }
+        console.log("Principal: " + listaaux[incP]);
+        incP++;
+    }    
+}
