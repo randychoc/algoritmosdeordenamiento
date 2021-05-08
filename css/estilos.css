@@ -1,9 +1,7 @@
 *
 {
     font-family: sans-serif;  
-    color: white;  
-    margin: 0;
-    padding: 0;
+    color: white;
 }
 h1
 {    
@@ -16,25 +14,19 @@ h1
 }
 h2
 {
-    color: white;
-    text-align: center;
-    padding: 10px;
-    background: -moz-linear-gradient(black, Orange);    
+    color: white;        
+    background-color: #434343;
+    font-family: 'Courier New', Courier, monospace;
 }
 body
 {
-    background-color: black;   
-    text-align: justify; 
+    background-color: #434343;
+    text-align: center; 
     color: white;
-}
-
-div
-{
-    margin-left: 5px;
 }
 div p 
 {
-    background-color: #ff8000;
+    background-color: #e43a15;
     width: auto;
     height: 100px;
     text-align: center;
@@ -48,6 +40,11 @@ div p
     color: brown;
     width: 10px;
 } 
+#botones ul button:hover 
+{    
+    color: white;   
+    border: 3px solid #fff;   
+}
 /*
 #botones
 {    
@@ -58,7 +55,7 @@ div p
     max-width: 100%;    
     margin: 10px auto;
 } */
-#botones ul
+/* #botones ul
 {
     list-style-type: none;    
     margin: 0;
@@ -68,8 +65,8 @@ div p
     justify-content: center;
     align-items: center;
     margin-right: 10px;
-}
-#botones ul button 
+} */
+/* #botones ul button 
 {                         
     padding: auto 20px;    
     text-decoration: none; 
@@ -77,12 +74,7 @@ div p
     background-color: rgb(32, 163, 32); 
     margin-left: 10px;  
     font-size: 17px;
-}
-#botones ul button:hover 
-{    
-    color: white;   
-    border: 5px solid gold;    
-}
+} */
 /* 
 #transi
 {

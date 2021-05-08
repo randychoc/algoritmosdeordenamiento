@@ -37,25 +37,25 @@ function nuevoBur()
     
     //controles TRUE= deshabilitado FALSE= habilitado
     document.getElementById("btnAle").disabled = false; 
-    document.getElementById("btnAle").style.background = "green";
+    document.getElementById("btnAle").style.background = "#0f9b0f";
 
     document.getElementById("btnNew").disabled = true;
-    document.getElementById("btnNew").style.background = "red";    
+    document.getElementById("btnNew").style.background = "#DC2424";    
 
     document.getElementById("btnSig").disabled = true;
-    document.getElementById("btnSig").style.background = "red";
+    document.getElementById("btnSig").style.background = "#DC2424";
 
     document.getElementById("btnQS").disabled = true;
-    document.getElementById("btnQS").style.background = "red";
+    document.getElementById("btnQS").style.background = "#DC2424";
 
     document.getElementById("btnINS").disabled = true;
-    document.getElementById("btnINS").style.background = "red";
+    document.getElementById("btnINS").style.background = "#DC2424";
 
     document.getElementById("btnMax").disabled = true;
-    document.getElementById("btnMax").style.background = "red";
+    document.getElementById("btnMax").style.background = "#DC2424";
 
     document.getElementById("btnMin").disabled = true;
-    document.getElementById("btnMin").style.background = "red";
+    document.getElementById("btnMin").style.background = "#DC2424";
 }
 //generar numero aleatorios
 var listaMaximo = 0;
@@ -77,25 +77,25 @@ function numAle()
     
     //controles TRUE= deshabilitado FALSE= habilitado
     document.getElementById("btnAle").disabled = true; 
-    document.getElementById("btnAle").style.background = "red";
+    document.getElementById("btnAle").style.background = "#DC2424";
 
     document.getElementById("btnNew").disabled = false;
-    document.getElementById("btnNew").style.background = "green";    
+    document.getElementById("btnNew").style.background = "#0f9b0f";    
 
     document.getElementById("btnSig").disabled = false;
-    document.getElementById("btnSig").style.background = "green";
+    document.getElementById("btnSig").style.background = "#0f9b0f";
 
     document.getElementById("btnQS").disabled = false;
-    document.getElementById("btnQS").style.background = "green";
+    document.getElementById("btnQS").style.background = "#0f9b0f";
 
     document.getElementById("btnINS").disabled = false;
-    document.getElementById("btnINS").style.background = "green";
+    document.getElementById("btnINS").style.background = "#0f9b0f";
 
     document.getElementById("btnMax").disabled = false;
-    document.getElementById("btnMax").style.background = "green";
+    document.getElementById("btnMax").style.background = "#0f9b0f";
 
     document.getElementById("btnMin").disabled = false;
-    document.getElementById("btnMin").style.background = "green";
+    document.getElementById("btnMin").style.background = "#0f9b0f";
 }
 
 function listaMax()
@@ -144,12 +144,13 @@ function aumentoBur()
     // 3. Añadir el noto de texto al elemento
     elementoh3.appendChild(contenidoh3);
     // 4. Agregar atributos al elemento
-    //elemento.setAttribute("style", "background-color:red");
-    elementoh3.style.backgroundColor = "brown";
+    //elemento.setAttribute("style", "background-color:#DC2424");
+    elementoh3.style.backgroundColor = "#00bf8f";
     elementoh3.style.padding = "10px";
     elementoh3.style.width = "auto";    
     elementoh3.style.marginBottom = "40px";
     elementoh3.style.textAlign = "center";
+    elementoh3.style.overflow = "auto";
     // 5. Agregar el elemento al documento
     document.getElementById("pilas").appendChild(elementoh3);
 
@@ -160,8 +161,8 @@ function aumentoBur()
     // 3. Añadir el noto de texto al elemento
     elementoh3.appendChild(contenidoh3);
     // 4. Agregar atributos al elemento
-    //elemento.setAttribute("style", "background-color:red");
-    elementoh3.style.backgroundColor = "blue";
+    //elemento.setAttribute("style", "background-color:#DC2424");
+    elementoh3.style.backgroundColor = "#e74c3c";
     elementoh3.style.padding = "10px";
     elementoh3.style.width = "auto";    
     elementoh3.style.marginBottom = "40px";
@@ -180,8 +181,8 @@ function aumentoBur()
         // 3. Añadir el noto de texto al elemento
         elementoDivP.appendChild(contenidoDivP);
         // 4. Agregar atributos al elemento
-        //elemento.setAttribute("style", "background-color:red");
-        elementoDivP.style.backgroundColor = "Blue";        
+        //elemento.setAttribute("style", "background-color:#DC2424");
+        elementoDivP.style.backgroundColor = "#e74c3c";        
         elementoDivP.style.width = "auto";    
         elementoDivP.style.marginBottom = "40px";
         elementoDivP.style.textAlign = "center";
@@ -215,12 +216,13 @@ function aumentoBur()
     // 3. Añadir el noto de texto al elemento
     elementoh3.appendChild(contenidoh3);
     // 4. Agregar atributos al elemento
-    //elemento.setAttribute("style", "background-color:red");
-    elementoh3.style.backgroundColor = "blue";
+    //elemento.setAttribute("style", "background-color:#DC2424");
+    elementoh3.style.backgroundColor = "#e74c3c";
     elementoh3.style.padding = "10px";
     elementoh3.style.width = "auto";    
     elementoh3.style.marginBottom = "40px";
     elementoh3.style.textAlign = "center";
+    elementoh3.style.overflow = "auto";
     // 5. Agregar el elemento al documento
     document.getElementById("pilas").appendChild(elementoh3);
     
@@ -262,19 +264,19 @@ function principalBur()
         
         //controles TRUE= deshabilitado FALSE= habilitado
         document.getElementById("btnAle").disabled = true; 
-        document.getElementById("btnAle").style.background = "red";
+        document.getElementById("btnAle").style.background = "#DC2424";
 
         document.getElementById("btnNew").disabled = false;
-        document.getElementById("btnNew").style.background = "green";    
+        document.getElementById("btnNew").style.background = "#0f9b0f";    
 
         document.getElementById("btnSig").disabled = true;
-        document.getElementById("btnSig").style.background = "red";
+        document.getElementById("btnSig").style.background = "#DC2424";
 
         document.getElementById("btnMax").disabled = false;
-        document.getElementById("btnMax").style.background = "green";
+        document.getElementById("btnMax").style.background = "#0f9b0f";
 
         document.getElementById("btnMin").disabled = false;
-        document.getElementById("btnMin").style.background = "green";
+        document.getElementById("btnMin").style.background = "#0f9b0f";
     }    
 }
 
@@ -292,7 +294,7 @@ function ordenQS()
     // 3. Añadir el noto de texto al elemento
     elementoh3.appendChild(contenidoh3);
     // 4. Agregar atributos al elemento    
-    elementoh3.style.backgroundColor = "orange";
+    elementoh3.style.backgroundColor = "#cb2d3e";
     elementoh3.style.padding = "10px";
     elementoh3.style.width = "auto";    
     elementoh3.style.marginBottom = "40px";
@@ -311,11 +313,11 @@ function ordenQS()
         // 3. Añadir el noto de texto al elemento
         elementoDivP.appendChild(contenidoDivP);
         // 4. Agregar atributos al elemento        
-        elementoDivP.style.backgroundColor = "orange";
+        elementoDivP.style.backgroundColor = "#cb2d3e";
         elementoDivP.style.width = "auto";    
         elementoDivP.style.marginBottom = "40px";
         elementoDivP.style.textAlign = "center";
-        elementoDivP.style.color = "black";
+        elementoDivP.style.color = "#fff";
         // 5. Agregar el elemento al documento
         document.getElementById("pilas").appendChild(elementoDivP);            
     }
@@ -377,20 +379,21 @@ function ordenQS()
     // 3. Añadir el noto de texto al elemento
     elementoh3.appendChild(contenidoh3);
     // 4. Agregar atributos al elemento    
-    elementoh3.style.backgroundColor = "orange";
+    elementoh3.style.backgroundColor = "#cb2d3e";
     elementoh3.style.padding = "10px";
     elementoh3.style.width = "auto";    
     elementoh3.style.marginBottom = "40px";
     elementoh3.style.textAlign = "center";
+    elementoh3.style.overflow = "auto";
     // 5. Agregar el elemento al documento
     document.getElementById("pilas").appendChild(elementoh3);
 
 
     document.getElementById("btnSig").disabled = false;
-    document.getElementById("btnSig").style.background = "green";
+    document.getElementById("btnSig").style.background = "#0f9b0f";
 
     document.getElementById("btnQS").disabled = true;
-    document.getElementById("btnQS").style.background = "red";
+    document.getElementById("btnQS").style.background = "#DC2424";
 }
 
 //ORDENAMIENTO INS
@@ -427,11 +430,11 @@ function ordenINS()
     // 3. Añadir el noto de texto al elemento
     elementoh3.appendChild(contenidoh3);
     // 4. Agregar atributos al elemento    
-    elementoh3.style.backgroundColor = "purple";
+    elementoh3.style.backgroundColor = "#4A569D";
     elementoh3.style.padding = "10px";
     elementoh3.style.width = "auto";    
     elementoh3.style.marginBottom = "40px";
-    elementoh3.style.textAlign = "center";
+    elementoh3.style.textAlign = "center";    
     // 5. Agregar el elemento al documento
     document.getElementById("pilas").appendChild(elementoh3);
 
@@ -446,7 +449,7 @@ function ordenINS()
         // 3. Añadir el noto de texto al elemento
         elementoDivP.appendChild(contenidoDivP);
         // 4. Agregar atributos al elemento        
-        elementoDivP.style.backgroundColor = "purple";
+        elementoDivP.style.backgroundColor = "#4A569D";
         elementoDivP.style.width = "auto";    
         elementoDivP.style.marginBottom = "40px";
         elementoDivP.style.textAlign = "center";
@@ -471,14 +474,15 @@ function ordenINS()
     // 3. Añadir el noto de texto al elemento
     elementoh3.appendChild(contenidoh3);
     // 4. Agregar atributos al elemento    
-    elementoh3.style.backgroundColor = "purple";
+    elementoh3.style.backgroundColor = "#4A569D";
     elementoh3.style.padding = "10px";
     elementoh3.style.width = "auto";    
     elementoh3.style.marginBottom = "40px";
     elementoh3.style.textAlign = "center";
+    elementoh3.style.overflow = "auto";
     // 5. Agregar el elemento al documento
     document.getElementById("pilas").appendChild(elementoh3);
 
     document.getElementById("btnINS").disabled = true;
-    document.getElementById("btnINS").style.background = "red";
+    document.getElementById("btnINS").style.background = "#DC2424";
 }
